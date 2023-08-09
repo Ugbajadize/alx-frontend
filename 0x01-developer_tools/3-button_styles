@@ -1,19 +1,9 @@
-.header {
-    background-color: #fff;
-    border-bottom: 1px solid #f1f2f2;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0%;
-    bottom: auto;
-    left: 0%;
-    right: 0%;
+element.style {
 }
-.w-nav {
-    z-index: 1000;
-    background: #ddd;
-    position: relative;
+.header-wrapper {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
 }
 * {
     box-sizing: border-box;
@@ -42,19 +32,7 @@ html {
     -webkit-text-size-adjust: 100%;
     font-family: sans-serif;
 }
-.w-nav:before, .w-nav:after {
-    content: " ";
-    grid-area: 1 / 1 / 2 / 2;
-    display: table;
-}
-.w-nav:after {
-    clear: both;
-}
-.w-nav:before, .w-nav:after {
-    content: " ";
-    grid-area: 1 / 1 / 2 / 2;
-    display: table;
-}
+
 ::selection {
     color: #252a34;
     background: #ffebf0;
